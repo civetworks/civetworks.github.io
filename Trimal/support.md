@@ -27,5 +27,6 @@ Need help with Trimal? Found a bug or have a feature request? We're here to help
 [Email Support](mailto:civetworks@outlook.com)
 
 ---
+&copy; 2025 Civet Works. All rights reserved.
 
 [Privacy Policy](./privacy_policy.md)
