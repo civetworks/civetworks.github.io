@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimal Support</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --background-color: #F2F2F7;
+            --card-color: #FFFFFF;
+            --text-color: #000000;
+            --secondary-text-color: #8E8E93;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            background-color: #FFCC00; /* Placeholder for app icon color */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #E5E5EA;
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .answer {
+            color: #333;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--secondary-text-color);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">🕒</div>
+            <h1>Trimal Support</h1>
+            <p>Simple World Clock & Time</p>
+        </header>
+
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="question">How do I add a new city?</div>
+                <div class="answer">Tap the "+" button in the top right corner of the main screen. You can search for any city or time zone and add it to your list.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">How do I use the Time Slider?</div>
+                <div class="answer">Tap on any city in your list to expand it. You will see a time slider appear. Drag the slider left or right to change the time. As you adjust the time for one city, all other cities in your list will update instantly to show the corresponding time.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">How do I delete a city?</div>
+                <div class="answer">Swipe left on the city you want to remove, or long-press on the city card and select the delete option.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Does Trimal work offline?</div>
+                <div class="answer">Yes! Trimal stores all time zone data locally on your device, so you can check times and use the converter features without an internet connection.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Is my data private?</div>
+                <div class="answer">Absolutely. We do not collect, store, or share any of your personal data. All your settings and saved cities stay on your device.</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Contact Us</h2>
+            <p>If you have any other questions, feedback, or need assistance, please feel free to reach out to us.</p>
+            <p><strong>Email:</strong> <a href="mailto:support@civetworks.com">support@civetworks.com</a></p>
+            <p><strong>Report an Issue:</strong> <a href="https://github.com/civetworks/trimal/issues">GitHub Issues</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Hongfei Zhou. All rights reserved.</p>
+            <p><a href="privacy_policy.md">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
