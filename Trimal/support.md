@@ -24,12 +24,8 @@ Absolutely. We do not collect, store, or share any of your personal data. All yo
 
 Need help with Trimal? Found a bug or have a feature request? We're here to help!
 
-Our support team usually responds within 24-48 hours.
-
 [Email Support](mailto:civetworks@outlook.com)
 
 ---
-
-&copy; 2024 Hongfei Zhou. All rights reserved.
 
 [Privacy Policy](./privacy_policy.md)
