@@ -7,7 +7,7 @@
 Tap the "+" button in the top right corner of the main screen. You can search for a city or place and add it to your list.
 
 **How do I use the Time Slider?**  
-Tap on any city in your list to expand it. You will see a time slider appear. Drag the slider left or right to change the time. As you adjust the time for one city, all other cities in your list will update instantly to show the corresponding time.
+Tap any city in your list—your local city or a destination—to expand it. Drag the timeline left or right to change the time. All other cities update instantly to show the corresponding local time and date.
 
 **How do I delete a city?**  
 Tap the pencil button, then use the delete control on the city row.
@@ -27,6 +27,6 @@ Need help with Trimal? Found a bug or have a feature request? We're here to help
 [Email Support](mailto:civetworks@outlook.com)
 
 ---
-&copy; 2025 Civet Works. All rights reserved.
+&copy; 2026 Civet Works. All rights reserved.
 
 [Privacy Policy](./privacy_policy.md)
