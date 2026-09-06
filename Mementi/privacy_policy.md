@@ -1,74 +1,62 @@
 # Privacy Policy
 
-**Last Updated:** December 6, 2025
+**Last Updated:** September 5, 2026
 
-Mementi ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share information when you use our mobile application (the "App").
+Mementi, provided by Civet Works, creates diaries and social posts from photos you select. This policy describes the OpenRouter-connected version of the app.
 
-## 1. Information We Collect
+## 1. Photos, prompts and generated content
 
-### 1.1 Information You Provide
-- **Photos:** We access your photo library only when you select images to create diaries or posts. We do not upload your entire library to our servers.
-- **Text Input:** We process the text you provide to generate content.
-- **AI Generation Data:** Data you submit for AI generation (such as selected photos and prompts) is processed to provide the service.
- - **Credits and Purchases:** We process purchase-related identifiers and your remaining credits to provide in‑app credit functionality.
+You choose which photos to import. Mementi does not upload your entire photo library. Imported photos, diary/post content and unfinished generation tasks are stored on your device. If iCloud storage is enabled, the app can synchronize these records through your personal Apple CloudKit container.
 
-### 1.2 Automatically Collected Information
-- **Usage Data:** We may collect anonymous usage statistics (e.g., features used, session duration) to improve the App.
-- **Device Information:** We may collect information about your device type, operating system, and unique device identifiers.
+When you request online generation or refinement, the app sends the selected, resized photos, the generation prompt, tone and language preferences, and available photo metadata such as date and location to OpenRouter and the model provider handling the request. Refinement also includes the selected previous text. This processing requires an internet connection and occurs outside your device. Opening existing saved content does not itself submit it for model generation.
 
-### 1.3 Sync and Storage Metadata
-- **Keychain Sync Metadata:** When iCloud Keychain is enabled, certain app items (e.g., remaining credits and processed transaction IDs) may be synchronized across your devices using Apple’s iCloud Keychain.
-- **iCloud Container Storage:** Photos you import may be stored in your personal iCloud container so they are available across your devices.
+## 2. OpenRouter authorization
 
-## 2. How We Use Your Information
-We use your information to:
-- Provide, maintain, and improve the App.
-- Generate AI content based on your inputs.
-- Process in-app purchases.
-- Respond to your comments and questions.
- - Synchronize certain app state across your devices when you enable iCloud features.
+You can sign in with OpenRouter using the system authentication session, or enter an existing OpenRouter API key in a masked input field. Mementi does not receive your platform password. OAuth exchanges a PKCE-protected authorization code for a key; manual entry verifies the key directly with OpenRouter. Both methods store the key in this device's Keychain with synchronization disabled. It is not stored in the app's content database, preferences or iCloud. The manual input is cleared when you leave its page.
 
-## 3. Sharing of Information
-We do not sell your personal information. We may share information:
-- **With Service Providers:** We use third-party AI providers (e.g., Google Gemini, OpenAI) to process your generation requests.
-    - We send strictly necessary data (photos, text, prompts) to these providers via their secure APIs.
-    - We do not sell your data to these providers.
-    - We direct these providers to use your data solely for the purpose of generating your requested content and not to use it for training their general public models, to the extent their API terms allow.
-- **For Legal Reasons:** We may disclose information if required by law or to protect our rights.
+During authorization the app temporarily listens on this device's loopback interface. OpenRouter redirects the system authentication session to a localhost URL containing a random session path and authorization code. The app validates that callback and closes the listener and authentication session. The callback does not go to a Civet Works website or a device on the local network. The API key and PKCE verifier are never included in the callback response.
 
-### 3.1 Apple iCloud Services
-- We use Apple iCloud services (iCloud Drive/CloudKit and iCloud Keychain) to provide cross‑device storage and synchronization when enabled on your devices.
-- Data stored or synced through iCloud is processed by Apple as a service provider, subject to Apple’s terms and privacy practices.
+The app uses your API key to submit generation requests and retrieve the key's reported usage and limits. When choosing an automatic default model, the app also attempts to read available account credits; if unavailable, it uses the key's reported allowance. These requests do not generate content. OpenRouter manages the platform account, model usage, billing and any provider keys you configure there. Provider retention, training and routing practices depend on their policies and your platform settings; Mementi does not control or make a blanket no-retention or no-training promise for those services.
 
+## 3. Service providers and sharing
 
-## 4. Data Security
-We take reasonable measures to help protect your information from loss, theft, misuse, and unauthorized access. However, no data transmission over the internet or wireless network can be guaranteed to be 100% secure.
+We do not sell your personal information. Relevant third-party services include:
 
-### 4.1 Keychain and iCloud Security
-- Keychain items synchronized via iCloud Keychain use platform encryption and are accessible only on devices signed into your Apple ID, when iCloud Keychain is enabled.
-- Items intended for synchronization are marked with the synchronizable attribute.
-- Photos stored in your iCloud container are managed by the operating system and subject to Apple’s security model.
+- **OpenRouter and the selected model provider:** Online model requests and platform account services. Review [OpenRouter's privacy policy](https://openrouter.ai/privacy) and the applicable provider policy/settings before submitting sensitive material.
+- **Apple:** Photo selection, device security and optional iCloud synchronization, subject to Apple's privacy practices.
+- **GitHub Pages:** Hosting of support and policy documents, subject to GitHub's privacy practices. It does not receive authorization callbacks.
 
-## 5. Data Storage and Retention
-- **Local Storage:** Your diary entries, photos, and generated content are primarily stored locally on your device. We do not store your personal diaries on our central servers.
-- **iCloud Storage:** When available, photos you import may be stored in the App’s iCloud container under your account to enable cross‑device access.
-- **Keychain Sync:** Remaining credits and processed transaction identifiers may sync across your devices via iCloud Keychain.
-- **Transaction Retention:** Processed transaction identifiers are retained for up to six months to prevent duplicate crediting, after which they are deleted.
+If you contact support, we receive the information you send and use it to respond. Do not send API keys, passwords or unnecessary private photos in support requests. We may disclose information when required by applicable law.
 
-## 6. Children's Privacy
-The App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.
+## 4. Storage and retention
 
-## 7. Your Choices
-- **Access and Delete:** You can delete all your data by deleting the App from your device.
-- **Photos Access:** You can revoke the App's access to your photo library at any time in your device settings.
- - **iCloud Controls:** You can enable or disable iCloud Keychain and iCloud Drive/Photos for your device in system settings. Sync functionality depends on these settings and your Apple ID.
- - **Manual Refresh:** You may use in‑App controls to refresh local state; synchronization timing is managed by the operating system.
+Saved content and imported images remain in local storage until removed through the app or the device's storage controls. Cloud copies follow your iCloud settings and Apple's controls. Generated content is not copied to a Civet Works inference server; model requests go directly to OpenRouter.
 
-## 8. Changes to This Policy
-We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+The OpenRouter key remains in the device Keychain until you disconnect or replace it. Disconnecting removes the local key; it does not revoke the platform key or delete platform request history. Revoke access and manage retained platform data in OpenRouter separately.
 
-## 10. International Data Transfers
-Apple may process iCloud data in multiple jurisdictions. By using iCloud features, your data may be transferred outside of your country consistent with Apple’s policies and applicable law.
+This version no longer sells or consumes Mementi credits. It does not automatically erase historical credit/transaction records from earlier versions or remote purchase records. Those records may remain for handling past purchases and support; contact us for questions about them. We do not promise a six-month automatic deletion period.
 
-## 9. Contact Us
-If you have any questions about this Privacy Policy, please contact us at civetworks@outlook.com.
+## 5. Your controls
+
+- Select only the photos you want processed, and use device settings to manage photo access.
+- Use the app's storage preference and Apple's iCloud controls to manage synchronization. Restart the app after changing the storage preference.
+- Delete saved entries in the app where supported, and manage local/iCloud storage through Apple settings.
+- Disconnect in Mementi to remove its local OpenRouter credential. Use OpenRouter's access management to revoke the key.
+
+Deleting the app alone does not necessarily delete device Keychain items, iCloud copies, platform data or past purchase records. Manage those stores separately. Contact us for assistance concerning data held by Civet Works.
+
+## 6. Security and international processing
+
+The app uses HTTPS for platform requests and the system Keychain for credentials. Generation and authentication services do not log API keys, authorization codes, verifiers, raw photos, prompts or generated responses. No transmission or storage system is guaranteed secure.
+
+Apple, OpenRouter, model providers and the documentation hosting service may process data in different countries according to their respective practices.
+
+## 7. Children and policy changes
+
+Mementi is not intended for children under 13. We do not knowingly collect personal information from children under 13. Platform age and eligibility requirements also apply when using OpenRouter.
+
+We may update this policy by publishing a revised version and date on this page.
+
+## 8. Contact
+
+For privacy questions, contact [civetworks@outlook.com](mailto:civetworks@outlook.com).

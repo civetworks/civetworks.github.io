@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last Updated:** December 6, 2025
+**Last Updated:** September 5, 2026
 
 Welcome to Mementi! These Terms of Service ("Terms") govern your use of the Mementi specific mobile application (the "App") and any related services provided by us.
 
@@ -45,13 +45,19 @@ We reserve the right to suspend or ban users who violate these guidelines.
 ### 2.3 Privacy
 Your use of the App is also governed by our Privacy Policy, which explains how we collect, use, and protect your information.
 
-## 3. Purchases and Subscriptions
+## 3. OpenRouter and Model Usage
 
-### 3.1 In-App Purchases
-You may purchase "Credits" or other items within the App. All purchases are final and non-refundable, except as required by applicable law or the policies of the Apple App Store.
- 
-### 3.2 Credit Sync
-If iCloud Keychain is enabled, your remaining credits and purchase state may sync across your devices signed into the same Apple ID. If iCloud Keychain is disabled or unavailable, credits may be device-specific. We do not guarantee immediate or uninterrupted synchronization.
+### 3.1 Your Platform Account
+Online generation requires your own OpenRouter access and an account able to fulfill model requests. Connect using OpenRouter sign-in or an existing API key; Mementi stores the key in this device's Keychain. OpenRouter's terms and the applicable model provider's rules also govern those services.
+
+### 3.2 Platform Charges
+Mementi does not sell app credits, subscriptions or generation packages in this version. OpenRouter manages model usage, billing and provider BYOK settings. Initial generation, refinement and each explicit retry are separate requests and may incur usage on your platform account. A timeout or unusable result does not establish that no platform usage occurred. We do not set platform prices or guarantee model availability, refunds or output quality.
+
+### 3.3 Disconnecting
+Disconnecting removes the local credential. It does not revoke the key on OpenRouter, cancel requests already submitted or erase platform history. Manage key revocation and platform data directly on OpenRouter.
+
+### 3.4 Earlier Mementi Purchases
+This version no longer uses Mementi credits as a generation requirement. Historical records are not automatically erased or converted into OpenRouter funds. Contact support concerning a past purchase. Any applicable consumer rights and Apple purchase policies continue to apply; this change does not promise an automatic exchange or refund.
 
 ## 4. Disclaimers and Limitation of Liability
 
