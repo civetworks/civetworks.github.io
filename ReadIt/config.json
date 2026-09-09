@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "features": {
+    "additionalClonedVoices": {
+      "enabled": true,
+      "allowedDeviceIDs": [
+        "34133cd8-55c2-4d6a-ae25-99602a04feff"
+      ]
+    }
+  }
+}
