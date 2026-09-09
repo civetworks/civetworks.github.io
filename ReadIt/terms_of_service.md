@@ -27,7 +27,7 @@ AI speech can mispronounce, omit or alter words, and sentence highlighting and g
 
 ## 3. OpenRouter and service charges
 
-Generating new audio requires internet access and an eligible OpenRouter account. You must meet the applicable providers' age and account requirements and protect your credentials.
+Generating new audio requires internet access and an OpenRouter connection, established through OAuth or a valid API key you are authorized to use. Service usage is associated with the account behind that key. You must meet the applicable providers' age and account requirements and protect your credentials.
 
 Read It does not sell in-app generation credits or subscriptions in this version. An app purchase, if applicable, does not include OpenRouter credits. OpenRouter and its providers determine service pricing, limits and availability. Free endpoints may change or become unavailable. Selecting a paid model asks for confirmation; subsequent generation through that model can consume account credits.
 

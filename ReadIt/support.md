@@ -13,13 +13,15 @@ Open Library and choose Import EPUB, or tap the + button when books are already 
 
 ## Do I need an account?
 
-Importing and reading books do not require an account. To create chapter audio, open Settings > Connect and authorize your own OpenRouter account in the system browser. You do not enter an API key directly into this version of Read It.
+Importing and reading books do not require an account. To create chapter audio, open Settings and choose either **Connect with OAuth** or **Enter API Key**.
+
+OAuth opens OpenRouter in the system browser and returns after authorization. With an API key, paste a valid key into the obscured input and tap **Connect with API Key**. The app validates it before saving it securely on this iPhone. A supplied key lets you connect without registering an account or signing in through the browser.
 
 If authorization does not return to the app, cancel and try again with a working network connection. The temporary localhost callback is handled on your own iPhone, not by this website.
 
 ## Who pays for speech?
 
-New speech uses your OpenRouter account. Model pricing, quotas and billing are managed by the service. Free models can be unavailable or rate-limited; paid models may consume credits after you select and confirm them. Read It does not sell generation credits or subscriptions. A failed or cancelled request may already have used provider resources.
+New speech uses the OpenRouter account associated with the connected key, whether you used OAuth or entered the key directly. Model pricing, quotas and billing are managed by the service. Free models can be unavailable or rate-limited; paid models may consume credits after you select and confirm them. Read It does not sell generation credits or subscriptions. A failed or cancelled request may already have used provider resources.
 
 ## How do I change the voice or speed?
 
@@ -39,7 +41,7 @@ Use the completed chapter's delete-audio button to remove that voice/model/speed
 
 ## Why is audio unavailable or highlighting incomplete?
 
-Check your network connection, OpenRouter account allowance and whether the selected model is available. Generated speech and on-device alignment can vary by voice, language and chapter. Apple speech assets may need an initial download. Keep the app open while checking a new sample and report the visible error if it persists.
+Check your network connection, the connected key's allowance and whether the selected model is available. Generated speech and on-device alignment can vary by voice, language and chapter. Apple speech assets may need an initial download. Keep the app open while checking a new sample and report the visible error if it persists.
 
 ## How do I disconnect or delete service data?
 

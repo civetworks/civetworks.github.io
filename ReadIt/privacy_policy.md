@@ -27,9 +27,11 @@ Pausing playback, closing the reader or locking the phone does not necessarily c
 
 ## 3. OpenRouter connection and account information
 
-Read It opens the system browser authentication session for OpenRouter authorization. It does not receive your OpenRouter password. A temporary listener on the device's loopback interface receives the authorization callback; it is not a callback to the Civet Works website or another device on your network.
+You can connect to OpenRouter through OAuth or enter an API key directly in Settings. For OAuth, Read It opens the system browser authentication session and does not receive your OpenRouter password. A temporary listener on the device's loopback interface receives the authorization callback; it is not a callback to the Civet Works website or another device on your network.
 
-The app stores the resulting API key and available OpenRouter account ID in this device's Keychain with synchronization disabled. It uses the key to request speech and retrieve account/key status, model availability, pricing and usage information. The account ID displayed in Settings is an internal service identifier; the current account integration does not obtain your email or profile username.
+For direct key entry, the input is obscured. The key is sent to OpenRouter to validate it and retrieve its associated account/key information before it is saved. This path does not require browser sign-in. Leaving the entry page clears the input draft and cancels an unfinished validation.
+
+For either connection method, the app stores the API key and available OpenRouter account ID in this device's Keychain with synchronization disabled. It uses the key to request speech and retrieve account/key status, model availability, pricing and usage information. The account ID displayed in Settings is an internal service identifier; the current account integration does not obtain your email or profile username.
 
 OpenRouter manages the platform account, authentication and billing. Information you provide on its sign-in pages is handled by OpenRouter under its policies.
 
