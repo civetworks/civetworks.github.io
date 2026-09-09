@@ -4,9 +4,7 @@
     "additionalClonedVoices": {
       "enabled": true,
       "identityKind": "openrouter_user",
-      "allowedHashes": [
-        ""
-      ]
+      "allowedHashes": []
     }
   }
 }
