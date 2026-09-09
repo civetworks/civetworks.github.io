@@ -1,25 +1,25 @@
 ---
-title: ReadIt Support
+title: Read It Support
 permalink: /ReadIt/support/
 ---
 
-# ReadIt Support
+# Read It Support
 
 For help or feedback, contact [civetworks@outlook.com](mailto:civetworks@outlook.com). Include your iPhone model, iOS version, app version and the visible error. Do not send API keys, passwords, authorization codes or private book content.
 
 ## How do I import a book?
 
-Open Library and choose Import EPUB, or tap the + button when books are already present. Select an EPUB from Files. You can also use the iOS share sheet to send an EPUB to ReadIt. The app reads EPUB files; it does not supply a book catalog.
+Open Library and choose Import EPUB, or tap the + button when books are already present. Select an EPUB from Files. You can also use the iOS share sheet to send an EPUB to Read It. The app reads EPUB files; it does not supply a book catalog.
 
 ## Do I need an account?
 
-Importing and reading books do not require an account. To create chapter audio, open Settings > Connect and authorize your own OpenRouter account in the system browser. You do not enter an API key directly into this version of ReadIt.
+Importing and reading books do not require an account. To create chapter audio, open Settings > Connect and authorize your own OpenRouter account in the system browser. You do not enter an API key directly into this version of Read It.
 
 If authorization does not return to the app, cancel and try again with a working network connection. The temporary localhost callback is handled on your own iPhone, not by this website.
 
 ## Who pays for speech?
 
-New speech uses your OpenRouter account. Model pricing, quotas and billing are managed by the service. Free models can be unavailable or rate-limited; paid models may consume credits after you select and confirm them. ReadIt does not sell generation credits or subscriptions. A failed or cancelled request may already have used provider resources.
+New speech uses your OpenRouter account. Model pricing, quotas and billing are managed by the service. Free models can be unavailable or rate-limited; paid models may consume credits after you select and confirm them. Read It does not sell generation credits or subscriptions. A failed or cancelled request may already have used provider resources.
 
 ## How do I change the voice or speed?
 
@@ -43,7 +43,7 @@ Check your network connection, OpenRouter account allowance and whether the sele
 
 ## How do I disconnect or delete service data?
 
-Settings > Disconnect removes the local key and account binding. Revoke the key or manage account history in OpenRouter separately. Deleting ReadIt does not necessarily remove Keychain items, device backups or provider-held data. See the Privacy Policy for details.
+Settings > Disconnect removes the local key and account binding. Revoke the key or manage account history in OpenRouter separately. Deleting Read It does not necessarily remove Keychain items, device backups or provider-held data. See the Privacy Policy for details.
 
 ## Documents
 
