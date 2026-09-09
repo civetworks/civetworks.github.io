@@ -1,10 +1,11 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "features": {
     "additionalClonedVoices": {
       "enabled": true,
-      "allowedDeviceIDs": [
-        "34133cd8-55c2-4d6a-ae25-99602a04feff"
+      "identityKind": "openrouter_user",
+      "allowedHashes": [
+        "91c2ed2dd2487869353083e68b55c40faeb7003fb5b0b284d5232a8fac900bc2"
       ]
     }
   }
