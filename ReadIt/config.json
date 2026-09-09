@@ -5,7 +5,7 @@
       "enabled": true,
       "identityKind": "openrouter_user",
       "allowedHashes": [
-        "91c2ed2dd2487869353083e68b55c40faeb7003fb5b0b284d5232a8fac900bc2"
+        ""
       ]
     }
   }
