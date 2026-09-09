@@ -25,7 +25,7 @@ New speech uses your OpenRouter account. Model pricing, quotas and billing are m
 
 Open Settings > Voice to select and preview a voice. Use Read Aloud Model to choose an available compatible model and Speech Speed for a speed from 0.5x to 2x. Changes apply to newly requested audio; they do not change the speed of audio already playing. Different combinations keep separate caches.
 
-Laura, Adrian and Zixuan are normally available. Sophie and Chloe are available to approved OpenRouter accounts. Laura and Adrian have English previews; the other voices have Chinese previews.
+Laura, Adrian, Zixuan and Yutong are normally available. Sophie and Chloe are available to approved OpenRouter accounts. Laura and Adrian have English previews; the other voices have Chinese previews.
 
 ## How do I download a chapter?
 
