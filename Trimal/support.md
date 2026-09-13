@@ -1,5 +1,5 @@
 # Trimal Support
-## Simple World Clock & Time
+## Time Zones & Travel Tools
 
 ### Frequently Asked Questions
 
@@ -13,10 +13,26 @@ Tap any city in your list—your local city or a destination—to expand it. Dra
 Tap the pencil button, then use the delete control on the city row.
 
 **Does Trimal work offline?**  
-Saved cities and time calculations work offline. Adding new places and refreshing weather details require network access.
+Saved cities and time calculations work offline. Currency conversion also works with rates previously downloaded for the selected base currency. The converter labels saved rates and shows the date of the selected currency pair. Loading rates for the first time, adding new places, and refreshing weather require a connection.
+
+**How do I convert a price?**
+
+Open Tools, then Currency. Choose the source and target currencies by tapping their codes. Search by currency name or code, enter an amount, and the result updates as you type. The arrow button exchanges the two currencies while keeping your entered amount. Trimal remembers your last pair and valid amount.
+
+**Are these the rates my bank will charge?**
+
+The converter uses daily reference rates from [Frankfurter](https://frankfurter.dev/), which may differ from your bank, card, or exchange service. Fees are not included. The displayed date belongs to the selected currency pair; it is not the time the app downloaded the data.
+
+**How do I update rates?**
+
+Tap the refresh button in Currency. Trimal also checks for an update when you open the converter or return to the app if the saved snapshot is more than 24 hours old. A failed refresh keeps available saved rates. If no rate is available, check your connection or select another currency and try again.
+
+**Which amounts can I enter?**
+
+Use your app's decimal separator. You can paste amounts with properly grouped thousands separators. Amounts must be nonnegative, with up to 12 whole-number digits and 6 decimal places. Results follow the target currency's usual decimal precision, such as no decimal places for Japanese yen.
 
 **Is my data private?**  
-Absolutely. We do not collect, store, or share any of your personal data. All your settings and saved cities stay on your device.
+Your saved cities, currency preferences, and entered amounts stay on your device. Amounts are calculated locally and are never sent to the exchange-rate service. Requests for rates include the base currency code. See the [privacy policy](./privacy_policy.md) for information about external services.
 
 ---
 
