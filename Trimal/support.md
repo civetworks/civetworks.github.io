@@ -1,23 +1,48 @@
 # Trimal Support
-## Time Zones & Travel Tools
+
+## Your Travel Companion for Time and Prices
+
+Trimal brings world time and currency conversion together for international travel. Save your home city and destinations in the Time tab to compare local times and arrange a call. Switch to Currency when you want to understand a local price in a familiar currency.
+
+The tabs use the same saved cities to suggest currencies for your trip. For example, adding Tokyo and London makes JPY and GBP available as trip suggestions in the currency picker; you can also choose from All currencies.
+
+Trimal remembers the last tab you used and opens it again the next time you launch the app. Your first launch opens Time.
 
 ### Frequently Asked Questions
 
 **How do I add a new city?**  
-Tap the "+" button in the top right corner of the main screen. You can search for a city or place and add it to your list.
+Open the three-dot menu in the top right corner of the Time tab and choose Add City. You can search for a city or place and add it to your list.
 
 **How do I use the Time Slider?**  
 Tap any city in your list—your local city or a destination—to expand it. Drag the timeline left or right to change the time. All other cities update instantly to show the corresponding local time and date.
 
+**How do I set my current destination?**
+
+Open the Time tab’s three-dot menu and choose Trip & Contact Hours. Select your home city and current destination from your saved cities. Choosing a home city suggests its currency; you can also choose your home currency separately. Home and destination receive icons in the city list.
+
+Changing the destination or home currency sets the converter to destination currency → home currency without clearing the amount. This waits until you finish editing an amount or selecting a currency. You can then select or swap currencies manually; those choices stay until the trip settings change. If the destination currency cannot be determined or is unavailable, your current pair stays in place.
+
+**How do I find a good time to call?**
+
+In Trip & Contact Hours, open each city you want to include, enable it, choose its preferred local hours, and tap Done. An end earlier than the start means the next day; the two times must differ. Each window repeats daily in that city’s time zone, including daylight saving changes.
+
+Expand any city’s timeline. Green areas show when all configured cities are available. Drag the timeline to compare another time or day; if no green area appears, there is no shared window in the part of the timeline shown. Cities without a configured window are not included. Deleting a city clears its home/destination association and contact hours, while your home currency stays saved.
+
 **How do I delete a city?**  
-Tap the pencil button, then use the delete control on the city row.
+Open the three-dot menu and choose Edit Cities, then use the delete control on the city row. Choose Done Editing from the same menu when finished.
 
 **Does Trimal work offline?**  
 Saved cities and time calculations work offline. Currency conversion also works with rates previously downloaded for the selected base currency. The converter labels saved rates and shows the date of the selected currency pair. Loading rates for the first time, adding new places, and refreshing weather require a connection.
 
 **How do I convert a price?**
 
-Open Tools, then Currency. Choose the source and target currencies by tapping their codes. Search by currency name or code, enter an amount, and the result updates as you type. The arrow button exchanges the two currencies while keeping your entered amount. Trimal remembers your last pair and valid amount.
+Open the Currency tab. Choose currencies by tapping their flags and codes. Search by currency name, code, or country, including aliases such as USA, UK, and RMB. English and Chinese searches work in any interface language; searching Germany or France finds EUR.
+
+While searching, tap the floating Done button at the right above the keyboard, or the keyboard's Search key, to dismiss it and keep your search results. Cancel in the upper-left corner closes the currency picker.
+
+The picker suggests trip currencies based on cities saved in World Time. For example, Tokyo and London suggest JPY and GBP. Suggestions follow your city order and update when the city list changes. The All currencies section is below, and searching shows matching currencies from that list. If a city's currency cannot be determined or is unavailable, it is omitted from suggestions. The picker does not keep a recent-choice history.
+
+Tap either the upper or lower amount to enter a value in that currency. The other amount updates as you type, with the currencies staying in place. Tap the floating Done button at the right above the keyboard to keep the calculated value of a valid expression and dismiss the keyboard. Tap the clear button beside the active amount to start again. The arrow button exchanges the currencies and uses the displayed result as the new input when it fits the input limit. Tap the copy icon beside the result to copy the displayed number; a brief “Copied” message confirms the action. Trimal remembers your pair, input position, and valid amount.
 
 **Are these the rates my bank will charge?**
 
@@ -25,14 +50,20 @@ The converter uses daily reference rates from [Frankfurter](https://frankfurter.
 
 **How do I update rates?**
 
-Tap the refresh button in Currency. Trimal also checks for an update when you open the converter or return to the app if the saved snapshot is more than 24 hours old. A failed refresh keeps available saved rates. If no rate is available, check your connection or select another currency and try again.
+Pull down in the Currency tab to refresh rates. Trimal also checks for an update when you open the converter or return to the app if the saved snapshot is more than 24 hours old. A failed refresh keeps available saved rates. If no rate is available, check your connection or select another currency and try again.
 
 **Which amounts can I enter?**
 
-Use your app's decimal separator. You can paste amounts with properly grouped thousands separators. Amounts must be nonnegative, with up to 12 whole-number digits and 6 decimal places. Results follow the target currency's usual decimal precision, such as no decimal places for Japanese yen.
+Use your app's decimal separator. You can paste amounts with properly grouped thousands separators. Amounts must be nonnegative, with up to 12 whole-number digits and 6 decimal places. Results follow the output currency's usual decimal precision, such as no decimal places for Japanese yen.
+
+**Can I calculate before converting?**
+
+Yes. Use +, −, × and ÷ above the amount keyboard on either side, or paste an expression such as `19.9×2+8`. Multiplication and division take precedence; pasted parentheses are supported. A complete expression converts immediately. Tap = or the separate Done button to replace a valid expression with its value; Done also dismisses the keyboard.
+
+Expressions are limited to 256 characters, with final values rounded to at most six decimal places. Unfinished expressions wait for more input. Division by zero, negative final values, and results beyond the amount limit show no converted value and do not overwrite your last saved valid amount. Use the clear button to start again. The calculator provides basic arithmetic, without discount, tip, tax, or bill-splitting forms.
 
 **Is my data private?**  
-Your saved cities, currency preferences, and entered amounts stay on your device. Amounts are calculated locally and are never sent to the exchange-rate service. Requests for rates include the base currency code. See the [privacy policy](./privacy_policy.md) for information about external services.
+Your saved cities, home and destination settings, contact hours, currency preferences, and entered amounts stay on your device. Contact-hour overlaps, expressions, trip currency suggestions, and conversion amounts are calculated locally; the saved city list and entered amounts are never sent to the exchange-rate service. Requests for rates include the base currency code. See the [privacy policy](./privacy_policy.md) for information about external services.
 
 ---
 
