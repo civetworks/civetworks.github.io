@@ -28,8 +28,16 @@ In Trip & Contact Hours, open each city you want to include, enable it, choose i
 
 Expand any city’s timeline. Green areas show when all configured cities are available. Drag the timeline to compare another time or day; if no green area appears, there is no shared window in the part of the timeline shown. Cities without a configured window are not included. Deleting a city clears its home/destination association and contact hours, while your home currency stays saved.
 
+**What do the sunrise and sunset icons show?**
+
+They show the selected day’s sunrise and sunset in that city’s local time zone. Dragging the timeline to another day updates them when data is available. Missing events are omitted. Sun times load independently, so a failed request does not hide the temperature. The temperature keeps the existing apparent-temperature value and unit, without the “Feels” prefix; UV is no longer shown.
+
 **How do I delete a city?**  
-Open the three-dot menu and choose Edit Cities, then use the delete control on the city row. Choose Done Editing from the same menu when finished.
+Open the three-dot menu and choose Edit Cities, then use the delete control on the city row. While editing, a Done button replaces the menu in the top right. Tap Done to finish editing and restore the menu.
+
+**How do I update the temperature and sun times?**
+
+Pull down on the city list in Time. This requests updated weather and sunrise/sunset data for your saved cities while keeping your selected timeline time. Trimal also checks for expired weather data while the live clock runs and when you return to the app. If an update fails, available data for the same location and selected time remains visible.
 
 **Does Trimal work offline?**  
 Saved cities and time calculations work offline. Currency conversion also works with rates previously downloaded for the selected base currency. The converter labels saved rates and shows the date of the selected currency pair. Loading rates for the first time, adding new places, and refreshing weather require a connection.
