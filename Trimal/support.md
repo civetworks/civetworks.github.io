@@ -20,7 +20,7 @@ Tap any city in your list—your local city or a destination—to expand it. Dra
 
 Open the Time tab’s three-dot menu and choose Trip & Contact Hours. Select your home city and current destination from your saved cities. Choosing a home city suggests its currency; you can also choose your home currency separately. Home and destination receive icons in the city list.
 
-Changing the destination or home currency sets the converter to destination currency → home currency without clearing the amount. This waits until you finish editing an amount or selecting a currency. You can then select or swap currencies manually; those choices stay until the trip settings change. If the destination currency cannot be determined or is unavailable, your current pair stays in place.
+Changing the destination or home currency puts both currencies first and selects the destination currency for input, keeping the entered number and other saved currencies. This waits until you finish entering an amount, selecting a currency, or editing the list. Later manual choices and ordering stay until the trip settings change. If the destination currency cannot be determined or is unavailable, your current list stays in place.
 
 **How do I find a good time to call?**
 
@@ -40,21 +40,25 @@ Open the three-dot menu and choose Edit Cities, then use the delete control on t
 Pull down on the city list in Time. This requests updated weather and sunrise/sunset data for your saved cities while keeping your selected timeline time. Trimal also checks for expired weather data while the live clock runs and when you return to the app. If an update fails, available data for the same location and selected time remains visible.
 
 **Does Trimal work offline?**  
-Saved cities and time calculations work offline. Currency conversion also works with rates previously downloaded for the selected base currency. The converter labels saved rates and shows the date of the selected currency pair. Loading rates for the first time, adding new places, and refreshing weather require a connection.
+Saved cities and time calculations work offline. Currency conversion also works with previously downloaded rates that cover the currencies you need. Each converted row labels saved rates and shows their reference date or dates. A missing rate affects only that row. Loading rates for the first time, adding new places, and refreshing weather require a connection.
 
 **How do I convert a price?**
 
-Open the Currency tab. Choose currencies by tapping their flags and codes. Search by currency name, code, or country, including aliases such as USA, UK, and RMB. English and Chinese searches work in any interface language; searching Germany or France finds EUR.
+Open the Currency tab. Use the three-dot menu and Add Currency to save more currencies, or tap a row’s currency heading to replace it. In Edit Currencies, drag the handle on the right of a row to reorder it, or use the delete control to remove it. Tap Done to finish. The list keeps at least one currency and does not allow duplicates. Search by currency name, code, or country, including aliases such as USA, UK, and RMB. English and Chinese searches work in any interface language; searching Germany or France finds EUR.
 
 While searching, tap the floating Done button at the right above the keyboard, or the keyboard's Search key, to dismiss it and keep your search results. Cancel in the upper-left corner closes the currency picker.
 
 The picker suggests trip currencies based on cities saved in World Time. For example, Tokyo and London suggest JPY and GBP. Suggestions follow your city order and update when the city list changes. The All currencies section is below, and searching shows matching currencies from that list. If a city's currency cannot be determined or is unavailable, it is omitted from suggestions. The picker does not keep a recent-choice history.
 
-Tap either the upper or lower amount to enter a value in that currency. The other amount updates as you type, with the currencies staying in place. Tap the floating Done button at the right above the keyboard to keep the calculated value of a valid expression and dismiss the keyboard. Tap the clear button beside the active amount to start again. The arrow button exchanges the currencies and uses the displayed result as the new input when it fits the input limit. Tap the copy icon beside the result to copy the displayed number; a brief “Copied” message confirms the action. Trimal remembers your pair, input position, and valid amount.
+Tap any amount to enter a value in that currency. Every other row updates as you type, with currencies staying in place. The input row has a light tint and pencil marker. Tap the floating Done button at the right above the keyboard to resolve a valid expression and dismiss the keyboard. Tap the clear button beside the active amount to start again, or a result’s copy icon to copy its displayed number. A brief “Copied” message confirms the action. Trimal remembers your currency list, its order, the input currency, and the precise source amount. Existing currency pairs migrate automatically.
+
+Switching between rows preserves the original calculation precision until you actually edit the amount. A result beyond the input limit remains visible and copyable; enter a smaller source amount before editing it. Switching to a currency without a usable result starts an empty input. Currencies already in the list are excluded from the picker, except the row you are replacing.
 
 **Are these the rates my bank will charge?**
 
-The converter uses daily reference rates from [Frankfurter](https://frankfurter.dev/), which may differ from your bank, card, or exchange service. Fees are not included. The displayed date belongs to the selected currency pair; it is not the time the app downloaded the data.
+The converter uses daily reference rates from [Frankfurter](https://frankfurter.dev/), which may differ from your bank, card, or exchange service. Fees are not included. Each converted row shows the date of the reference quote used, rather than the download time. When a conversion uses two quotes through a shared base and their dates differ, both dates appear.
+
+Open the three-dot menu in either Time or Currency and choose Information to read the reference-rate explanation and access the data-source link.
 
 **How do I update rates?**
 
@@ -66,7 +70,7 @@ Use your app's decimal separator. You can paste amounts with properly grouped th
 
 **Can I calculate before converting?**
 
-Yes. Use +, −, × and ÷ above the amount keyboard on either side, or paste an expression such as `19.9×2+8`. Multiplication and division take precedence; pasted parentheses are supported. A complete expression converts immediately. Tap = or the separate Done button to replace a valid expression with its value; Done also dismisses the keyboard.
+Yes. Use +, −, × and ÷ above the amount keyboard in any currency row, or paste an expression such as `19.9×2+8`. Multiplication and division take precedence; pasted parentheses are supported. A complete expression converts immediately. Tap = or the separate Done button to replace a valid expression with its value; Done also dismisses the keyboard.
 
 Expressions are limited to 256 characters, with final values rounded to at most six decimal places. Unfinished expressions wait for more input. Division by zero, negative final values, and results beyond the amount limit show no converted value and do not overwrite your last saved valid amount. Use the clear button to start again. The calculator provides basic arithmetic, without discount, tip, tax, or bill-splitting forms.
 

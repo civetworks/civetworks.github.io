@@ -1,6 +1,6 @@
 # Privacy Policy for Trimal
 
-**Last updated:** September 13, 2026
+**Last updated:** September 15, 2026
 
 This Privacy Policy describes how your personal information is handled in Trimal.
 
@@ -8,7 +8,7 @@ This Privacy Policy describes how your personal information is handled in Trimal
 
 **Trimal does not operate an account system, analytics service, or advertising service. We do not receive your saved cities, currency preferences, or entered amounts on our own servers.**
 
-Your saved cities, app preferences, home city, current destination, home currency, per-city contact hours, selected currencies, input position, and last valid conversion amount are stored on your device. Downloaded reference rates are also stored locally so they can be used offline. Currency calculations and basic arithmetic expressions are evaluated on your device; entered amounts and expressions are never included in exchange-rate requests. The last valid numeric value is saved, rather than an expression history.
+Your saved cities, app preferences, home city, current destination, home currency, per-city contact hours, ordered currency list, active input currency, and last valid source currency and amount are stored on your device. Downloaded reference rates and the last snapshot base are also stored locally so they can be used offline, including after that base currency is removed from the visible list. Currency calculations and basic arithmetic expressions are evaluated on your device; entered amounts and expressions are never included in exchange-rate requests. The last valid numeric value is saved, rather than an expression history.
 
 Trip currency suggestions are computed on your device from saved cities' region names and time zones. The app does not send your city list to a service to generate these suggestions. Currency selection history is no longer kept; previously stored recent choices are removed when the app initializes currency preferences.
 
