@@ -1,56 +1,49 @@
 # Mementi Support
 
-Contact [civetworks@outlook.com](mailto:civetworks@outlook.com) for help, bugs or feedback. Include the app version and the error shown. Please do not send passwords, API keys or private photos.
+Contact [civetworks@outlook.com](mailto:civetworks@outlook.com) for help, bugs or feedback. Include the app version and the error shown. Please do not send passwords, credentials or private photos.
 
-## How do I connect OpenRouter?
+## How do I start generating?
 
-Open **Settings → OpenRouter**. Use **Sign in with OpenRouter** to authorize in the system browser, or **Enter API key** to paste an existing OpenRouter API key and choose **Verify and connect**. These are alternative methods; only one is needed. Either method stores the key in this device's Keychain. Leaving the input page cancels validation. Connect separately on each device.
+Use iOS 27 or later on a device and in a region that support Apple Intelligence. Enable Apple Intelligence in the system Settings and allow its model to finish downloading. Mementi checks model availability in its own **Settings → Apple Intelligence** section.
 
-If you choose **New Diary** or **New Post** before connecting, Mementi prompts you to connect first. After a successful connection, it continues the creation flow you selected. Cancelling leaves you on the current page.
+Choose **New Diary** or **New Post**, select up to 13 photos, pick a tone and generate. Mementi analyzes the photos individually, then writes three drafts. Select one to receive two refinements while retaining the original. Review the content before saving or sharing. No model account, login or API key is required.
 
-## Who pays for generation?
+## When does Mementi use Private Cloud Compute?
 
-Model requests use your OpenRouter account. OpenRouter handles usage, billing and any provider BYOK configuration. Mementi does not sell credits or subscriptions. Each initial generation, refinement or explicit retry can incur separate platform usage; the app does not automatically retry a paid request.
+Writing starts on the device. If a request exceeds the local context budget and **Use Private Cloud Compute when needed** is enabled, Mementi tries Apple Private Cloud Compute (PCC). Only photo summaries, available date/place information and text excerpts enter this model request; original photos are analyzed on the device.
 
-Usage / Limit appears in one row and belongs to the authorized API key. Unlimited means that key has no spending limit; it does not indicate an unlimited account balance. A failed lookup appears as a dash.
+PCC is enabled by default. Turn it off in Mementi Settings to keep all model generation on the device. PCC requires internet and has an Apple-managed daily usage limit. Settings displays its availability and quota status. When Apple offers more usage options, the app can open Apple's system interface for them. Mementi does not sell credits or subscriptions.
 
-## How do I choose a model?
+If PCC is unavailable because of network, quota or service conditions, Mementi continues with smaller writing requests on the device. It does not repeatedly retry PCC during that generation.
 
-Connect OpenRouter first, then open **Settings → OpenRouter → Model**. The model picker appears only while connected. It includes models suited to writing diaries and posts from photos, with known prices. Search by model or provider, or filter by **Free** and **Paid**. Each model shows its published input/output prices in USD per million tokens. Price ranges include conditional rates; the platform determines final charges and free-model usage limits.
+## Why is generation unavailable?
 
-The automatic default is Gemini 3.8 Flash when the platform reports available credit, and a free model when credit is exhausted. If credit cannot be determined, the initial default stays free. Your explicit model choice is saved on this device, takes precedence over automatic defaults, and applies to the next generation or refinement. Browsing and selecting models does not generate content. If a selected model becomes unavailable, choose another. Prices can be refreshed by pulling down the list or using the refresh button.
+- **Unsupported device or region:** Both the photo-analysis feature and PCC require an eligible Apple Intelligence device and region. See [Apple's current requirements](https://support.apple.com/en-us/121115).
+- **Apple Intelligence is off:** Enable it in system Settings.
+- **Model is not ready:** Wait for the system model download, then check again.
+- **Unsupported language:** Choose another writing language in Mementi Settings.
+- **Context limit:** The app splits writing into smaller groups. If a single group still cannot fit, reduce the input or try again later.
+- **Refusal or incomplete output:** Your photos and completed stages remain available. Review the selected photos and retry if appropriate.
 
-## What happens to old Mementi credits?
+Existing saved diaries and posts remain readable when generation is unavailable.
 
-This version no longer uses Mementi credits to permit generation or offers new credit purchases. Historical records are preserved; they are not automatically exchanged for OpenRouter funds. Contact support about a past Mementi purchase. The previous Credits / Restore Purchases screen is no longer available in this version.
+## Can I cancel or resume?
 
-## How do I disconnect or revoke access?
+Use Cancel while generating. Completed photo analysis, writing groups and candidates are saved with the unfinished task. Resume the task from history to continue. Changing photos, tone or selected reference restarts the affected writing steps while allowing valid photo summaries to be reused.
 
-Use **Settings → OpenRouter → Disconnect** to remove the key from this device. To switch accounts, disconnect and then use either connection method. To revoke the platform key itself, use OpenRouter's key settings. Disconnecting locally does not cancel a request already submitted, refund usage or remove platform history.
+Cancelling stops further app work. It cannot undo processing or usage that Apple already completed for a submitted PCC request.
 
-## Why did generation fail?
+## Where are photos and diaries stored?
 
-- **Connection required or expired:** Connect or reconnect your OpenRouter account.
-- **Platform allowance unavailable:** Review your key limit, account availability and provider settings on OpenRouter.
-- **Rate limit:** Wait for the platform's limit to clear before retrying.
-- **Network or timeout:** Check connectivity. A timed-out request may already have incurred usage; retry only when you want a new request.
-- **Invalid output or unavailable provider:** The model may have returned incomplete or incompatible content. Your photos and previous options remain available so you can try again.
+Photos, entries and unfinished task checkpoints use local Core Data with optional iCloud synchronization. Restart after changing the storage preference. On-device-only generation does not turn off iCloud sync or Apple's location-name lookup. See the [Privacy Policy](./privacy_policy.html).
 
-If sign-in does not return to the app, cancel and retry with a working connection. The connection uses a temporary localhost address on your device and does not require a hosted callback page. Report the app version and visible error without sharing the callback URL or code.
+## What happens when upgrading?
 
-## Where are my photos and diaries stored?
-
-Imported photos, diaries, posts and unfinished tasks are stored locally, with optional synchronization through your personal iCloud container. Restart the app after changing its storage preference. Existing saved content remains available without an OpenRouter connection.
-
-Online generation sends selected photos, prompts and relevant date/location metadata to OpenRouter and its model provider. Refinement also sends the selected previous text. Provider privacy and retention settings apply. See the [Privacy Policy](./privacy_policy.html) for details.
-
-## Does Mementi access all my photos?
-
-You select which photos to import. Mementi does not upload your entire library. Manage photo permissions in device settings.
+Saved photos and entries are preserved, and older unfinished task payloads remain readable. The app removes its retired local model credential and preferences. Local cleanup does not revoke old remote credentials or delete provider accounts. Historical Mementi purchase records are not automatically removed or exchanged for model usage; contact support about a past purchase.
 
 ## Does deleting the app remove everything?
 
-Deleting the app removes its local app data, but may leave Keychain items, iCloud copies, platform data and historical purchase records. Disconnect/revoke platform access and manage iCloud storage separately as needed.
+Deleting the app removes its local app data but may leave iCloud copies, historical provider data and past purchase records. Manage those stores separately as needed.
 
 [Privacy Policy](./privacy_policy.html) · [Terms of Service](./terms_of_service.html)
 

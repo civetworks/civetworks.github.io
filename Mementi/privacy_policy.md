@@ -1,62 +1,58 @@
 # Privacy Policy
 
-**Last Updated:** September 5, 2026
+**Last Updated:** September 17, 2026
 
-Mementi, provided by Civet Works, creates diaries and social posts from photos you select. This policy describes the OpenRouter-connected version of the app.
+Mementi, provided by Civet Works, creates diaries and social posts from photos you select. This policy describes the iOS 27 version using Apple Foundation Models.
 
-## 1. Photos, prompts and generated content
+## 1. Photos, text and model processing
 
-You choose which photos to import. Mementi does not upload your entire photo library. Imported photos, diary/post content and unfinished generation tasks are stored on your device. If iCloud storage is enabled, the app can synchronize these records through your personal Apple CloudKit container.
+You choose which photos to import. Mementi does not submit your entire photo library for generation. Imported photos, saved entries and unfinished tasks, including completed photo summaries and drafts, are stored on your device. If iCloud storage is enabled, these records can synchronize through your personal Apple CloudKit container.
 
-When you request online generation or refinement, the app sends the selected, resized photos, the generation prompt, tone and language preferences, and available photo metadata such as date and location to OpenRouter and the model provider handling the request. Refinement also includes the selected previous text. This processing requires an internet connection and occurs outside your device. Opening existing saved content does not itself submit it for model generation.
+Photo analysis uses Apple's on-device model. Writing also starts on the device. The app uses short photo summaries, your chosen tone and language, and available date and place information. Refinement uses an excerpt from your selected draft. Location-name lookup may use Apple's location services; it is separate from model generation.
 
-## 2. OpenRouter authorization
+When **Use Private Cloud Compute when needed** is enabled and a writing request exceeds the on-device context budget, Mementi may send photo summaries, available date/place information, writing preferences and text excerpts to Apple Private Cloud Compute (PCC). Original photos are not sent to PCC for model generation. PCC requires a network connection and is subject to Apple's usage limits and privacy practices. You can turn this setting off to keep all model generation on the device. This choice does not change your iCloud synchronization preference.
 
-You can sign in with OpenRouter using the system authentication session, or enter an existing OpenRouter API key in a masked input field. Mementi does not receive your platform password. OAuth exchanges a PKCE-protected authorization code for a key; manual entry verifies the key directly with OpenRouter. Both methods store the key in this device's Keychain with synchronization disabled. It is not stored in the app's content database, preferences or iCloud. The manual input is cleared when you leave its page.
+Opening saved content does not itself submit it for model generation. See [Apple's Private Cloud Compute information](https://security.apple.com/private-cloud-compute/) for details about Apple's service.
 
-During authorization the app temporarily listens on this device's loopback interface. OpenRouter redirects the system authentication session to a localhost URL containing a random session path and authorization code. The app validates that callback and closes the listener and authentication session. The callback does not go to a Civet Works website or a device on the local network. The API key and PKCE verifier are never included in the callback response.
+## 2. Accounts and service providers
 
-The app uses your API key to submit generation requests and retrieve the key's reported usage and limits. When choosing an automatic default model, the app also attempts to read available account credits; if unavailable, it uses the key's reported allowance. These requests do not generate content. OpenRouter manages the platform account, model usage, billing and any provider keys you configure there. Provider retention, training and routing practices depend on their policies and your platform settings; Mementi does not control or make a blanket no-retention or no-training promise for those services.
+Mementi does not require an account or a model API key and does not operate an inference proxy. Relevant services are:
 
-## 3. Service providers and sharing
+- **Apple:** System model processing, optional Private Cloud Compute, photo selection, location-name lookup, device security and optional iCloud synchronization, subject to Apple's privacy practices.
+- **GitHub Pages:** Hosting of support and policy documents, subject to GitHub's privacy practices. It does not receive model requests.
 
-We do not sell your personal information. Relevant third-party services include:
+We do not sell your personal information. If you contact support, we receive the information you send and use it to respond. Do not include passwords, credentials or unnecessary private photos. We may disclose information when required by applicable law.
 
-- **OpenRouter and the selected model provider:** Online model requests and platform account services. Review [OpenRouter's privacy policy](https://openrouter.ai/privacy) and the applicable provider policy/settings before submitting sensitive material.
-- **Apple:** Photo selection, device security and optional iCloud synchronization, subject to Apple's privacy practices.
-- **GitHub Pages:** Hosting of support and policy documents, subject to GitHub's privacy practices. It does not receive authorization callbacks.
+## 3. Storage and retention
 
-If you contact support, we receive the information you send and use it to respond. Do not send API keys, passwords or unnecessary private photos in support requests. We may disclose information when required by applicable law.
+Saved content and imported images remain in local storage until removed through the app or device storage controls. Cloud copies follow your iCloud settings and Apple's controls. Generated content is not copied to a Civet Works inference server. Completed generation stages are saved with unfinished tasks to support retry and recovery.
 
-## 4. Storage and retention
+During upgrade, the app removes the retired local model credential and model preferences. This local cleanup does not revoke old platform credentials, delete data retained by previous service providers or delete remote service accounts. Manage those records with the corresponding provider if needed.
 
-Saved content and imported images remain in local storage until removed through the app or the device's storage controls. Cloud copies follow your iCloud settings and Apple's controls. Generated content is not copied to a Civet Works inference server; model requests go directly to OpenRouter.
+The app no longer sells or consumes Mementi credits. Historical purchase and transaction records are not automatically erased; contact support about past purchases. We do not promise a fixed automatic deletion period for those historical records.
 
-The OpenRouter key remains in the device Keychain until you disconnect or replace it. Disconnecting removes the local key; it does not revoke the platform key or delete platform request history. Revoke access and manage retained platform data in OpenRouter separately.
+## 4. Your controls
 
-This version no longer sells or consumes Mementi credits. It does not automatically erase historical credit/transaction records from earlier versions or remote purchase records. Those records may remain for handling past purchases and support; contact us for questions about them. We do not promise a six-month automatic deletion period.
+- Select the photos to import and manage photo access in device settings.
+- Turn off Private Cloud Compute in Mementi Settings to keep model generation on the device.
+- Use the app's storage setting and Apple's iCloud controls to manage synchronization. Restart the app after changing the storage preference.
+- Cancel generation to stop further work. A request already submitted to Apple may already have been processed and counted toward usage.
+- Delete saved entries where supported, and manage device/iCloud storage through Apple settings.
 
-## 5. Your controls
+Deleting the app does not necessarily delete iCloud copies, data held by earlier service providers or past purchase records. Manage those stores separately or contact support concerning data held by Civet Works.
 
-- Select only the photos you want processed, and use device settings to manage photo access.
-- Use the app's storage preference and Apple's iCloud controls to manage synchronization. Restart the app after changing the storage preference.
-- Delete saved entries in the app where supported, and manage local/iCloud storage through Apple settings.
-- Disconnect in Mementi to remove its local OpenRouter credential. Use OpenRouter's access management to revoke the key.
+## 5. Security and international processing
 
-Deleting the app alone does not necessarily delete device Keychain items, iCloud copies, platform data or past purchase records. Manage those stores separately. Contact us for assistance concerning data held by Civet Works.
+Model requests use Apple's Foundation Models framework and system services. The generation implementation does not log raw photos, prompts, photo summaries or generated responses. No transmission or storage system is guaranteed secure.
 
-## 6. Security and international processing
+Apple and the documentation hosting service may process data in different countries according to their respective practices. See [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
 
-The app uses HTTPS for platform requests and the system Keychain for credentials. Generation and authentication services do not log API keys, authorization codes, verifiers, raw photos, prompts or generated responses. No transmission or storage system is guaranteed secure.
+## 6. Children and policy changes
 
-Apple, OpenRouter, model providers and the documentation hosting service may process data in different countries according to their respective practices.
-
-## 7. Children and policy changes
-
-Mementi is not intended for children under 13. We do not knowingly collect personal information from children under 13. Platform age and eligibility requirements also apply when using OpenRouter.
+Mementi is not intended for children under 13. We do not knowingly collect personal information from children under 13. Apple's eligibility requirements also apply to its services.
 
 We may update this policy by publishing a revised version and date on this page.
 
-## 8. Contact
+## 7. Contact
 
 For privacy questions, contact [civetworks@outlook.com](mailto:civetworks@outlook.com).

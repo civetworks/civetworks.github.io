@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last Updated:** September 5, 2026
+**Last Updated:** September 17, 2026
 
 Welcome to Mementi! These Terms of Service ("Terms") govern your use of the Mementi specific mobile application (the "App") and any related services provided by us.
 
@@ -45,19 +45,19 @@ We reserve the right to suspend or ban users who violate these guidelines.
 ### 2.3 Privacy
 Your use of the App is also governed by our Privacy Policy, which explains how we collect, use, and protect your information.
 
-## 3. OpenRouter and Model Usage
+## 3. Apple Intelligence and Model Usage
 
-### 3.1 Your Platform Account
-Online generation requires your own OpenRouter access and an account able to fulfill model requests. Connect using OpenRouter sign-in or an existing API key; Mementi stores the key in this device's Keychain. OpenRouter's terms and the applicable model provider's rules also govern those services.
+### 3.1 Availability
+Generation uses Apple Foundation Models and requires iOS 27 or later, a supported Apple Intelligence device and region, and the downloaded system model. Availability and supported languages may change with Apple's services. No Mementi account or model API key is required.
 
-### 3.2 Platform Charges
-Mementi does not sell app credits, subscriptions or generation packages in this version. OpenRouter manages model usage, billing and provider BYOK settings. Initial generation, refinement and each explicit retry are separate requests and may incur usage on your platform account. A timeout or unusable result does not establish that no platform usage occurred. We do not set platform prices or guarantee model availability, refunds or output quality.
+### 3.2 On-device and Private Cloud Compute Processing
+Photos are analyzed on the device. Writing starts on the device and may use Apple Private Cloud Compute (PCC) when a request exceeds the local context budget and the user has enabled PCC. PCC processes photo summaries, available date/place information and text excerpts through Apple; original photos are not sent to PCC for generation. Users can disable PCC in Mementi Settings.
 
-### 3.3 Disconnecting
-Disconnecting removes the local credential. It does not revoke the key on OpenRouter, cancel requests already submitted or erase platform history. Manage key revocation and platform data directly on OpenRouter.
+### 3.3 Usage Limits
+Mementi does not sell app credits, subscriptions or generation packages. PCC requires internet and is subject to Apple's daily usage limits, eligibility rules and service terms. Apple may offer additional usage options through its own system interface. Mementi does not guarantee PCC availability, usage allowances or output quality. Cancelling a request or receiving an unusable result does not establish that no Apple service usage occurred.
 
-### 3.4 Earlier Mementi Purchases
-This version no longer uses Mementi credits as a generation requirement. Historical records are not automatically erased or converted into OpenRouter funds. Contact support concerning a past purchase. Any applicable consumer rights and Apple purchase policies continue to apply; this change does not promise an automatic exchange or refund.
+### 3.4 Earlier Mementi Purchases and Services
+This version no longer uses Mementi credits as a generation requirement. Historical purchase records are not automatically erased or converted into another service's funds or usage. Upgrade cleanup removes the retired local model credential and preferences; it does not revoke remote credentials or delete data held by previous providers. Contact support concerning past Mementi purchases. Applicable consumer rights and Apple purchase policies continue to apply; this change does not promise an automatic exchange or refund.
 
 ## 4. Disclaimers and Limitation of Liability
 
