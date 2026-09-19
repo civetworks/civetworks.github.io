@@ -5,48 +5,65 @@ permalink: /MetroMinute/privacy_policy/
 
 # Privacy Policy for MetroMinute
 
-**Last updated:** August 27, 2026
+**Last updated:** September 19, 2026
 
-This Privacy Policy explains how information is handled when you use MetroMinute.
+This policy explains how MetroMinute and its Nearby Departures Home Screen widgets handle information. The app does not have an account system, advertising, analytics SDK, tracking SDK, or developer-operated backend.
 
-## 1. Information MetroMinute Processes
+## Location
 
-### Location
+Location access is optional in the app. When you allow it, MetroMinute requests a current location while the app is in use to select a supported metro area and find a nearby transit stop. You can instead choose an area and stop manually.
 
-If you grant permission, MetroMinute requests a current location while the app is in the foreground. The location is processed on your device to select a supported metro area and find the nearest supported rail station. MetroMinute does not use background location, store a location history, or send your coordinates to the developer.
+If you also allow location access for widgets, a Nearby Departures widget can request an in-use location when iOS runs its update. iOS controls when that access and update are available. The app and widgets do not continuously track location, request Always location access, or maintain a location history.
 
-### Local Preferences
+Coordinates are processed on your device. MetroMinute does not save them in its preferences or widget cache, send them to the developer, or include them in transit-data requests. You can change location permission in iOS Settings.
 
-MetroMinute stores your region mode, last selected area, station choices, recent stations, and selected system tabs locally on your device. This information is used only to restore your preferences and is not sent to the developer.
+## Local Preferences and Widget Data
 
-### Transit Data Requests
+MetroMinute stores your area selection, included transit systems, chosen stops, up to four recent stops per area, and selected system tabs on your device. The app shares relevant preferences with its widget through a local shared container.
 
-MetroMinute connects directly to official or authorized transit-data services to request arrivals and service alerts for the system and station you are viewing. These requests use transit identifiers rather than your location coordinates. Network providers and transit services may receive standard technical information, such as an IP address, under their own privacy policies and terms.
+The widget also stores its latest departure board, including stop and system identifiers, route and destination information, and arrival times. This can be displayed as **Last nearby** when location is temporarily unavailable and permission is still granted. Expired departures are not eligible for that fallback. The cache contains stop information, not coordinates or a history of locations.
 
-## 2. Data Collection and Tracking
+Local diagnostic messages record permission states and technical error codes to help investigate location failures. These messages do not include coordinates or stop names, and MetroMinute does not automatically send them to the developer.
 
-The developer does not collect, sell, rent, or use your personal information for advertising. MetroMinute has no account system, advertising SDK, analytics SDK, tracking SDK, or developer-operated backend.
+## Transit Services and Network Requests
 
-## 3. Third-Party Transit Services
+The app and widget request transit information directly from third-party services. Depending on the selected area and included systems, these include:
 
-Depending on the region and station you view, MetroMinute may request data from services operated by the Metropolitan Transportation Authority (MTA), the Port Authority of New York and New Jersey for PATH, Bay Area Rapid Transit (BART), 511 Open Data for Caltrain, the Massachusetts Bay Transportation Authority (MBTA), and the Chicago Transit Authority (CTA). Availability and data practices are governed by those providers' terms and policies.
+- Metropolitan Transportation Authority (MTA)
+- Port Authority of New York and New Jersey (PATH)
+- NYC Ferry, through its Connexionz-hosted data service
+- Bay Area Rapid Transit (BART)
+- 511 Open Data for Caltrain
+- Massachusetts Bay Transportation Authority (MBTA)
+- Chicago Transit Authority (CTA)
 
-## 4. Data Retention and Deletion
+Requests use transit identifiers, such as a system, feed, or stop identifier, rather than your location coordinates. The service operators and network providers may receive standard connection information, including your IP address. Their handling and retention of that information are subject to their own policies. MetroMinute does not operate those services or receive their server logs.
 
-Location fixes are used for the current foreground operation and are not retained as a location history. Local preferences remain on your device until you change them, remove them through available app or system controls, or delete the app. Deleting MetroMinute removes its locally stored preferences from that device.
+If you open an official link from a service alert, the destination website handles that visit under its own policies.
 
-## 5. Children's Privacy
+## Support Correspondence
 
-MetroMinute does not knowingly collect personal information from children. The app does not include accounts, advertising, social features, messaging, or user-generated content.
+If you email support, the developer receives your email address and the content you choose to send, including any attachments. Email is handled through the support email service and is used to respond to your request and related follow-up. Please avoid sending precise location histories, unrelated personal information, or full device logs. You can contact the same address to request deletion of your support correspondence.
 
-## 6. Security
+## Retention and Deletion
 
-MetroMinute uses the networking and security capabilities provided by iOS. No method of electronic transmission is completely secure, and live transit services remain subject to their operators' security and availability.
+Location fixes are used for the current operation and are not saved as a location history. Preferences remain locally until changed or the app's data is removed. New widget boards replace the previous cached board; a stored board may remain on disk after its departures expire, but those departures cannot be reused as fallback content.
 
-## 7. Changes to This Policy
+To remove local app and widget data, delete MetroMinute through iOS Settings. Offloading the app or removing only a widget does not erase all saved app data. Any device backups are managed through your backup settings. MetroMinute does not provide an account or developer cloud copy that needs a separate account-deletion request.
 
-This Privacy Policy may be updated to reflect changes to MetroMinute or applicable requirements. The current version will be posted at this page with a revised “Last updated” date.
+Support correspondence is retained for handling the request and related follow-up; contact support about deletion. Deleting the app does not delete email correspondence or records held independently by transit-service operators.
 
-## 8. Contact Us
+## Advertising, Tracking, and Children
 
-For privacy questions, contact [civetworks@outlook.com](mailto:civetworks@outlook.com).
+The developer does not sell or rent personal information or use it for advertising or tracking. MetroMinute does not knowingly collect personal information from children through the app and has no social, messaging, or user-generated-content features.
+
+## Security and Policy Updates
+
+MetroMinute uses iOS networking and security capabilities, including HTTPS for transit requests. No method of storage or transmission is completely secure. This page will be updated when the app's practices change, with a revised date above.
+
+## Contact
+
+For privacy questions or support-data requests, email [civetworks@outlook.com](mailto:civetworks@outlook.com).
+
+- [Support](/MetroMinute/support/)
+- [Terms of Service](/MetroMinute/terms_of_service/)

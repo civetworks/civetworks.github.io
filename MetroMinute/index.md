@@ -5,25 +5,26 @@ permalink: /MetroMinute/
 
 # MetroMinute
 
-## The next train, at a glance.
+## The next train or ferry, at a glance.
 
-MetroMinute gives you a clear view of upcoming rail departures at the station nearest you—or any supported station you choose.
+MetroMinute gives you a clear view of upcoming departures at the nearest supported stop—or any stop you choose.
 
-## Four metro areas. Six rail systems.
+## Four metro areas. Seven transit systems.
 
-- **New York City:** MTA Subway and PATH
+- **New York City:** MTA Subway, PATH, and NYC Ferry
 - **San Francisco Bay Area:** BART and Caltrain
 - **Boston:** MBTA rapid transit
 - **Chicago:** CTA 'L'
 
-Choose a region automatically from your foreground location, search by station or line, switch between connected systems at shared station complexes, and review official service alerts when supported.
+Choose an area, include the transit systems you use, search for a stop, and check upcoming departures and available service alerts. At shared stops, switch between supported systems in separate tabs. Small and Medium Nearby Departures widgets bring the nearest supported stop to your Home Screen; iOS controls their refresh timing.
 
-No account. No map. No trip-planning clutter. No advertising, analytics, or background location tracking.
+Location is optional in the app. You can choose an area and stop manually. MetroMinute has no account, advertising, analytics, or continuous background location tracking.
 
 ## Documents
 
 - [Privacy Policy](/MetroMinute/privacy_policy/)
 - [Support](/MetroMinute/support/)
+- [Terms of Service](/MetroMinute/terms_of_service/)
 
 ## Contact
 
