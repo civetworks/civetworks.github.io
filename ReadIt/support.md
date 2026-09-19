@@ -33,6 +33,8 @@ Sarah, Adrian, Zixuan and Yutong are normally available. Sophie and Chloe are av
 
 Open the reader's top-right menu > Contents, then tap the chapter's download icon. The title itself navigates to the chapter. Audio is generated without starting playback; the list shows received data and estimated progress when available. Use the stop button to cancel. The system task may also display Generating Audio with the chapter name.
 
+To listen before the download finishes, open that chapter, close Contents and use the playback control. Playback joins the existing download and starts when audio is available; it does not create a second request for the same voice, model and speed.
+
 Pausing playback or closing Contents does not cancel a download. Interrupted downloads are not resumed from a partial file; an explicit retry generates the chapter again and may cause new service usage.
 
 ## How do I remove downloads or a book?
