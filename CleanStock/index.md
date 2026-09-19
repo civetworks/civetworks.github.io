@@ -5,7 +5,7 @@ permalink: /CleanStock/
 
 # Clean Stock
 
-Clean Stock is a focused market watchlist app for stocks, ETFs, indexes, mutual funds, and crypto tickers. It is designed for quick daily checks without overwhelming screens or noisy dashboards.
+Clean Stock is a focused market watchlist app for stocks, ETFs, indexes, and mutual funds. It is designed for quick daily checks without overwhelming screens or noisy dashboards.
 
 ## Documents
 
