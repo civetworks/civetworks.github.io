@@ -5,7 +5,7 @@ permalink: /CleanStock/privacy_policy/
 
 # Privacy Policy
 
-**Last Updated:** September 19, 2026
+**Last Updated:** September 30, 2026
 
 Clean Stock ("we," "our," or "us") respects your privacy. This Privacy Policy explains how information is handled when you use the Clean Stock mobile application (the "App").
 
@@ -23,11 +23,19 @@ Providers may receive your IP address, request headers, service cookies, and oth
 
 ## AI and Sentiment Features
 
-On eligible devices running iOS 27 or later, Sentiment uses Apple's Foundation Models to summarize news tone. The model first retrieves recent headlines and may request price and chart context before generating a summary. The App prefers Apple Private Cloud Compute (PCC), which processes the request on Apple's servers.
+On eligible devices running iOS 27 or later, Sentiment uses Apple's Foundation Models to produce a structured research report. The model retrieves recent headlines, market data, and available company or fund information. The App prefers Apple Private Cloud Compute (PCC), which processes the request on Apple's servers.
 
-A PCC request can include the selected asset's symbol and name, analysis instructions, retrieved headlines, and price or chart evidence. The App does not add your full watchlist, personal holding quantities, paper trades, or trade notes to the analysis request. Apple provides the processing service under its applicable privacy terms.
+A PCC request can include the selected asset's symbol and name, analysis instructions, headlines, prices and volume, calculated price indicators, market and sector benchmark comparisons, valuation metrics, reported earnings, estimates and calendar dates, quarterly financial statements and snapshots, or fund descriptions, fees, holdings and sector weights. Available chart context and retrieved web excerpts may also be included. The App does not add your full watchlist, personal holding quantities, paper trades, or trade notes to the analysis request. Apple provides the processing service under its applicable privacy terms.
 
 If PCC is unavailable or encounters a recoverable quota, connection, or service issue, the App may use an available Apple model on your device and explain the reason. In that case, model inference takes place on the device, while retrieving news and market data still uses network services. Sentiment is hidden on iOS 26 and when both Apple models report that the device is ineligible; temporary setup or service issues may instead show guidance.
+
+### Optional web research
+
+You can add your own Tavily and/or Brave Search API keys in Settings → Web Research. When you request Sentiment analysis, the App sends the selected asset's name and ticker and research queries directly to the configured providers. Tavily is preferred; Brave can provide backup search or work on its own. Selected article URLs go to Tavily when more detail is needed. Each provider receives only its own key to authorize requests. Retrieved excerpts may be included in the Apple model's context. See [Tavily's privacy policy](https://www.tavily.com/privacy) and [Brave's API privacy information](https://api-dashboard.search.brave.com/documentation/resources/privacy-notice).
+
+Keys are stored in this device's Keychain with device-only protection; the App does not sync them through iCloud or include them in model prompts or app logs. Saving a key does not send a search request. Remove Key deletes that credential for future analyses; it does not revoke it or delete prior requests at the provider. We do not operate a Clean Stock backend for this feature.
+
+Retrieved research and completed Sentiment reports are cached in the App's local Caches storage, excluded from backup and iCloud. Reports can be reused for 1 hour from generation, search results for 15 minutes, article excerpts for 7 days, company/fund context for 6 hours, and asset and benchmark daily charts for 1 hour. Original generation and retrieval times are retained. This disposable cache is size-limited; expired entries are removed when accessed and iOS may purge files. Clear Cached Research in Web Research removes stored research and report copies without deleting saved keys or an already displayed report.
 
 ## Analytics and Advertising
 
