@@ -5,7 +5,7 @@ permalink: /MetroMinute/privacy_policy/
 
 # Privacy Policy for MetroMinute
 
-**Last updated:** September 19, 2026
+**Last updated:** October 23, 2026
 
 This policy explains how MetroMinute and its Nearby Departures Home Screen widgets handle information. The app does not have an account system, advertising, analytics SDK, tracking SDK, or developer-operated backend.
 
@@ -41,17 +41,37 @@ Requests use transit identifiers, such as a system, feed, or stop identifier, ra
 
 If you open an official link from a service alert, the destination website handles that visit under its own policies.
 
+## Station Photos and Photo Services
+
+When a stop header requests a station photo, the app sends the catalog's reviewed station article title to Wikipedia. It then requests the image URL returned by that service, typically from Wikimedia image hosting. These requests do not include your GPS coordinates, but the stop name can identify an area you selected or a nearby stop chosen using location. Photo requests can occur for manually selected stops even when location permission is off. The widget does not request station photos.
+
+The service operators receive the requested names or URLs and standard connection information, including your IP address. Wikimedia's handling of that information is described in its [Privacy Policy](https://foundation.wikimedia.org/wiki/Policy:Privacy_policy); other image hosts may apply their own policies. MetroMinute does not operate those services or receive their server logs.
+
+Photo results are cached in memory by transit system, stop identifier and reviewed title, with limits of 64 entries and 16 MiB of image data. Successful images can be reused for up to seven days and missing-image results for 30 minutes. Failed or cancelled requests are not saved as missing photos. A dedicated on-device HTTP cache has a 16 MiB memory and 100 MiB disk budget and follows the services' freshness headers. These budgets and reuse intervals are not guaranteed disk-deletion deadlines or promises of offline availability. The old stop-name-to-photo-URL preference mapping is removed when the photo service initializes.
+
+## Public News and On-Device Classification
+
+While the app is active in New York City with MTA included, it can request public news feeds to identify reports of subway shootings that occurred that New York calendar day. Sources include ABC7, NBC New York, Gothamist, PIX11, amNewYork, New York Post, CBS, Google News, GDELT, and Notify NYC/Everbridge. Search requests use fixed citywide terms; they do not include your coordinates, selected stop, station identifier or personal search history. Requests are no more frequent than hourly per source, and service limits or errors can delay them further. The widget does not fetch news.
+
+These services receive the requested URLs or search terms and ordinary connection information such as IP addresses. Their own policies govern their handling and retention. Opening a report link sends a normal website request to the publisher or linked service. MetroMinute does not receive their server logs.
+
+On compatible devices with Apple Intelligence available, candidate article text is classified locally using Apple's on-device Foundation Models framework. MetroMinute does not send article text, coordinates or station identifiers to a remote AI service. There is no cloud-classification fallback.
+
+The app saves feed articles, response validators, refresh and retry deadlines, recent classification fingerprints, and accepted reports in its local Application Support directory. Local diagnostic logs record technical failures, model availability, timing, resource state and counts; model-performance logs do not include article text, URLs or location and are not automatically sent to the developer.
+
 ## Support Correspondence
 
 If you email support, the developer receives your email address and the content you choose to send, including any attachments. Email is handled through the support email service and is used to respond to your request and related follow-up. Please avoid sending precise location histories, unrelated personal information, or full device logs. You can contact the same address to request deletion of your support correspondence.
 
 ## Retention and Deletion
 
-Location fixes are used for the current operation and are not saved as a location history. Preferences remain locally until changed or the app's data is removed. New widget boards replace the previous cached board; a stored board may remain on disk after its departures expire, but those departures cannot be reused as fallback content.
+Location fixes are used for the current operation and are not saved as a location history. Preferences remain locally until changed or the app's data is removed. Photo results in memory are bounded and expire as described above; cached network responses may be evicted or removed by the system. New widget boards replace the previous cached board; a stored board may remain on disk after its departures expire, but those departures cannot be reused as fallback content.
+
+News notices stop displaying at the following midnight in New York. Expired reports and classification fingerprints older than 48 hours are pruned during cache maintenance; feed contents are replaced by later successful responses. If the app is inactive, saved news data can remain on disk beyond those display or reuse intervals. No location history is stored with the news cache.
 
 To remove local app and widget data, delete MetroMinute through iOS Settings. Offloading the app or removing only a widget does not erase all saved app data. Any device backups are managed through your backup settings. MetroMinute does not provide an account or developer cloud copy that needs a separate account-deletion request.
 
-Support correspondence is retained for handling the request and related follow-up; contact support about deletion. Deleting the app does not delete email correspondence or records held independently by transit-service operators.
+Support correspondence is retained for handling the request and related follow-up; contact support about deletion. Deleting the app does not delete email correspondence or records held independently by transit, photo or news-service operators.
 
 ## Advertising, Tracking, and Children
 
@@ -59,7 +79,7 @@ The developer does not sell or rent personal information or use it for advertisi
 
 ## Security and Policy Updates
 
-MetroMinute uses iOS networking and security capabilities, including HTTPS for transit requests. No method of storage or transmission is completely secure. This page will be updated when the app's practices change, with a revised date above.
+MetroMinute uses iOS networking and security capabilities, including HTTPS for transit, photo and news requests. No method of storage or transmission is completely secure. This page will be updated when the app's practices change, with a revised date above.
 
 ## Contact
 

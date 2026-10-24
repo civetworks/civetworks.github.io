@@ -5,6 +5,8 @@ permalink: /MetroMinute/support/
 
 # MetroMinute Support
 
+**Last updated:** October 23, 2026
+
 For help, bug reports, or feedback, email [civetworks@outlook.com](mailto:civetworks@outlook.com). Include your app version, iOS version, transit system, stop, and approximate time of the problem when relevant. Avoid personal information or full device logs.
 
 ## Getting Started
@@ -45,9 +47,29 @@ If location is off or widget access has not been allowed, check **Settings → P
 
 Live data depends on your network connection, the transit provider, and current service hours. Pull down on the departure board to refresh. Provider interruptions or access limits can affect arrivals while stop search remains available. If the issue continues, contact support with the affected stop and time.
 
+For MTA subway stops, trains temporarily rerouted through the stop can appear when the official feeds report them. Regular route badges remain first; temporary badges follow while those trains are listed. An MTA route's alert marker refers to that line's operating alerts, which can affect a different part of the line. Open the details for affected locations and times. Wheelchair and shuttle-bus symbols in alert text reproduce provider markers; they are not an independent guarantee of current accessible service.
+
 PATH has no integrated service-alert feed. Other systems may have no active advisory to display. A missing alert in MetroMinute does not establish that service is running normally.
 
 A countdown is a prediction. **Due** is shown only for supported provider-reported boarding states; neither indication guarantees that doors are open or a departure can still be boarded. Follow station or landing signage and staff instructions.
+
+## Station Photos
+
+A stop header may show an image found through Wikipedia. Lookup uses a reviewed station article title. Some stops have no matching station article or image; a photo can also be unavailable or mismatched. A photo is illustrative; use the displayed stop name, route information, and official signage to identify your stop.
+
+Photo loading runs independently of departure refreshes and uses a separate, bounded local cache. Photos depend on the image services and network access. An image may change or be unavailable offline. A missing photo does not by itself mean that departure data is unavailable. If a photo is wrong, email support with the stop name and transit system; avoid including private location history.
+
+The [Privacy Policy](/MetroMinute/privacy_policy/) explains stop-name queries, third-party requests, and local photo caching.
+
+## NYC Subway News Notices
+
+MTA station screens can show an in-app notice for a subway shooting reported to have occurred that New York calendar day. Open it to read the source and follow its link. It requires a compatible iPhone with Apple Intelligence enabled and downloaded; departures, official service alerts, search and widgets work without it.
+
+News checks run only while the app is active, no more often than hourly per source. There are no push notifications or background monitoring. Source delays, incomplete reports, connection failures and classification errors can delay, omit or misidentify a report. Low Power Mode or high device temperature can defer analysis. An empty area above the departures does not mean the system has been checked and found safe.
+
+An accepted notice remains until midnight New York time even after changing MTA stops or temporarily losing the connection. It can disappear earlier if corrected. The notice describes an event reported for that day; it does not establish that a threat is still ongoing or assess safety at your stop. Follow current official guidance and contact emergency services in an emergency.
+
+For a missing or incorrect notice, send support the source URL, publication time and app/iOS version. Avoid including private location history. The Privacy Policy explains public-source requests and local processing.
 
 ## Other Limitations
 

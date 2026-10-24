@@ -5,7 +5,7 @@ permalink: /MetroMinute/terms_of_service/
 
 # Terms of Service for MetroMinute
 
-**Last updated:** September 19, 2026
+**Last updated:** October 23, 2026
 
 MetroMinute is provided by Hongfei Zhou. These terms describe use of its transit-information service. The app's software license remains governed by the license presented with its App Store distribution, including the [Apple Standard End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) where no custom license is supplied. This page does not replace that license.
 
@@ -15,11 +15,17 @@ MetroMinute displays departures and service information from third-party transit
 
 Countdowns and boarding statuses are informational and do not guarantee that a vehicle is present, its doors are open, or it is safe to board. Follow official signs and transit staff instructions. MetroMinute does not guarantee a connection, departure, or arrival time.
 
+## Public News Notices
+
+The app may show publisher headlines, short excerpts and links concerning subway shootings reported for the current New York calendar day. News is checked while the app is active, no more often than hourly per source, and classified on a compatible device using Apple Intelligence. Coverage is incomplete, can be delayed or wrong, and is not independently verified by MetroMinute. The app does not send emergency or push alerts or monitor events in the background.
+
+A notice can remain until midnight New York time and does not establish that a threat is ongoing, determine conditions at a particular stop, or provide a safety assessment. The absence of a notice is not evidence of safety. Use current official guidance and contact emergency services when appropriate.
+
 ## Availability and Device Permissions
 
 An internet connection is needed for live transit information. Service depends on transit providers, their data access, and your device's connectivity. MetroMinute does not promise uninterrupted service or a particular refresh frequency. iOS controls Home Screen widget updates and location availability.
 
-Location is optional in the app; a stop can be chosen manually. Nearby Departures widgets require the appropriate location permission to identify a nearby stop. The [Privacy Policy](/MetroMinute/privacy_policy/) explains how location, local preferences, transit requests, and support correspondence are handled.
+Location is optional in the app; a stop can be chosen manually. Nearby Departures widgets require the appropriate location permission to identify a nearby stop. The [Privacy Policy](/MetroMinute/privacy_policy/) explains how location, local preferences, transit, photo and news requests, on-device classification, caching, and support correspondence are handled.
 
 ## Price and Purchases
 
@@ -27,7 +33,9 @@ Any download price and storefront availability are shown by the App Store before
 
 ## Third-Party Services and Rights
 
-Transit names, route marks, and data belong to their respective rights holders. Display in MetroMinute does not grant permission to redistribute those materials. External transit services and linked websites have their own terms and policies; MetroMinute does not control their content or availability.
+Transit names, route marks, data, station photographs and news content belong to their respective rights holders. Display in MetroMinute does not grant permission to redistribute those materials. External transit, photo and news services and linked websites have their own terms and policies; MetroMinute does not control their content or availability.
+
+Some stops have no reviewed station article or photo. Station photos are illustrative, may be mismatched or unavailable, and should not be used to identify an entrance or determine safe access. A photo's availability through Wikipedia or another service does not grant users ownership of it or permission to reuse it outside its applicable license. This page does not replace any required image-specific attribution or license notice.
 
 ## Changes and Your Rights
 
