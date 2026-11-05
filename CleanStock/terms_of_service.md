@@ -5,7 +5,7 @@ permalink: /CleanStock/terms_of_service/
 
 # Terms of Service
 
-**Last Updated:** September 27, 2026
+**Last Updated:** November 4, 2026
 
 These Terms of Service ("Terms") govern your use of the Clean Stock mobile application (the "App"). By using the App, you agree to these Terms. If you do not agree, do not use the App.
 
@@ -34,7 +34,7 @@ Third-party content remains the property of its respective owners and may be sub
 
 Optional web research uses Tavily and/or Brave Search API keys supplied by you. Requests are made directly from the App under your provider accounts and are subject to their terms, usage limits and charges. Research results and completed reports may be cached in the App's local storage. Reports are reused for up to 1 hour unless you tap Refresh. Per-analysis request limits do not guarantee a fixed cost or complete web coverage. Removing a key stops its use in future analyses; it does not revoke the credential or erase prior requests at the provider. Clear Cached Research removes the App's stored research and report cache.
 
-Sentiment depends on compatible hardware, system settings, model availability, and Apple's services. Cloud analysis and market requests also depend on network access and applicable service limits. Availability of a feature or provider is not guaranteed. Price alert delivery depends on iOS scheduling and data availability and is not a continuous monitoring service.
+In version 1.11 and later, Sentiment reports require Apple Private Cloud Compute, compatible hardware, supported system settings, a network connection, and available service quota. Market data also depends on network and provider availability. Price alert delivery depends on iOS scheduling and available data.
 
 ## 4. App Data
 

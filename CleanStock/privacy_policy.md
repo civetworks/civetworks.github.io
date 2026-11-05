@@ -5,7 +5,7 @@ permalink: /CleanStock/privacy_policy/
 
 # Privacy Policy
 
-**Last Updated:** September 30, 2026
+**Last Updated:** November 4, 2026
 
 Clean Stock ("we," "our," or "us") respects your privacy. This Privacy Policy explains how information is handled when you use the Clean Stock mobile application (the "App").
 
@@ -23,11 +23,11 @@ Providers may receive your IP address, request headers, service cookies, and oth
 
 ## AI and Sentiment Features
 
-On eligible devices running iOS 27 or later, Sentiment uses Apple's Foundation Models to produce a structured research report. The model retrieves recent headlines, market data, and available company or fund information. The App prefers Apple Private Cloud Compute (PCC), which processes the request on Apple's servers.
+In Clean Stock 1.11 and later, all new Sentiment reports are generated with Apple Private Cloud Compute (PCC) on Apple's servers. The feature requires iOS 27 or later, an eligible iPhone, and a network connection. The App retrieves recent headlines, market data, and available company or fund information for the selected asset.
 
 A PCC request can include the selected asset's symbol and name, analysis instructions, headlines, prices and volume, calculated price indicators, market and sector benchmark comparisons, valuation metrics, reported earnings, estimates and calendar dates, quarterly financial statements and snapshots, or fund descriptions, fees, holdings and sector weights. Available chart context and retrieved web excerpts may also be included. The App does not add your full watchlist, personal holding quantities, paper trades, or trade notes to the analysis request. Apple provides the processing service under its applicable privacy terms.
 
-If PCC is unavailable or encounters a recoverable quota, connection, or service issue, the App may use an available Apple model on your device and explain the reason. In that case, model inference takes place on the device, while retrieving news and market data still uses network services. Sentiment is hidden on iOS 26 and when both Apple models report that the device is ineligible; temporary setup or service issues may instead show guidance.
+If PCC cannot process a request because of eligibility, setup, a connection issue, or a service limit, a new report cannot be generated. A previously completed PCC report may still be available in the local cache. Version 1.10 could also generate reports with an on-device Apple model when PCC was unavailable.
 
 ### Optional web research
 
