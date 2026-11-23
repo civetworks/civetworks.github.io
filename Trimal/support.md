@@ -6,6 +6,12 @@ For help, contact [civetworks@outlook.com](mailto:civetworks@outlook.com). Inclu
 
 Trimal requires iOS 26 or later. In Time, use the menu to add cities, then tap a city to adjust its timeline. Trip & Contact Hours sets your home city, destination and preferred calling hours. In Currency, enter an amount in any row to update the others. In Spending, tap + to record an expense; no account or trip setup is needed.
 
+## Split expenses
+
+In Trimal 2.6 or later, open Spending, tap the … menu, then choose Split members to add the people you are traveling with. When you record a shared expense, select the participants and the person who paid. The next new entry brings back your last selection.
+
+Tap the two-arrow button above + and choose the first and last expense dates. The settlement offsets what the same two people owe each other in the same currency. Tap Share to send the list through the iOS share sheet. Splitting and calculating settlements work offline.
+
 ## Camera, Photos and receipt recognition
 
 Camera and Photos require iOS 27, a device that supports Apple Intelligence, Apple Intelligence enabled, and at least one available image model. If these requirements are not met, + opens manual entry directly. Check Apple Intelligence settings and allow any required model download to finish.

@@ -1,6 +1,6 @@
 # Privacy Policy for Trimal
 
-**Last updated:** September 19, 2026
+**Last updated:** November 22, 2026
 
 Trimal does not operate an account system, advertising service or analytics service. We do not receive your saved cities, preferences, entered amounts or expenses on our own servers. Some optional features send information to the services described below.
 
@@ -9,6 +9,12 @@ Trimal does not operate an account system, advertising service or analytics serv
 Saved cities, home and destination settings, contact hours, currency preferences, the last valid input amount and downloaded reference rates are stored locally. Time calculations, arithmetic, currency conversion and currency suggestions run on your device. Entered amounts and expressions are not included in exchange-rate requests.
 
 Spending entries are stored in a separate local file. They include the amount, currency, category, date, notes, city/country/time-zone snapshot and any saved reference exchange quote. The app also keeps your Spending display currency and up to five cities recently selected for entries. These saved expense locations contain no device coordinates. There is no app-managed account or cross-device expense sync.
+
+## Expense splitting
+
+Starting in Trimal 2.6, you can enter names for people you split expenses with. Trimal stores these names, the payer and participants on each shared entry, and your most recent selection on your device. Trimal calculates settlements locally from the expenses and dates you choose.
+
+If you share a settlement, Trimal passes the selected date range, member names, currencies and transfer amounts to the iOS share sheet. You choose the app and the recipients. The receiving app handles the shared text under its own privacy policy. Trimal does not send the list automatically.
 
 ## Receipt photos and Apple Intelligence
 
@@ -37,6 +43,8 @@ Location access is optional. Choosing Use Current Location requests permission; 
 ## Storage and deletion
 
 You can edit or delete expenses and remove saved cities in the app. Deleting a saved city does not delete expenses with their own place snapshots. Removing a city clears its associated trip selection and contact hours. Recently selected cities remain in local preferences until replaced by later choices or the app's data is deleted.
+
+You can delete split members who are not linked to any saved expense. Hiding a member keeps the name on past expenses and removes it from new selections. To delete a linked member, first remove that member from all associated expenses or delete those expenses.
 
 Reference rates and public banner photos are cached locally. The photo cache has size limits and can be cleared by the app or operating system; deleting an expense does not immediately remove a cached public photo. Receipt images are not part of these caches.
 
